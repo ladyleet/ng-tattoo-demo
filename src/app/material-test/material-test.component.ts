@@ -13,6 +13,8 @@ import { MD_TABS_DIRECTIVES } from '@angular2-material/tabs';
 import { MD_TOOLBAR_DIRECTIVES } from '@angular2-material/toolbar';
 import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
+import {MdUniqueSelectionDispatcher} from "@angular2-material/core/core";
+
 
 
 @Component({
@@ -20,6 +22,7 @@ import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
   selector: 'app-material-test',
   templateUrl: 'material-test.component.html',
   styleUrls: ['material-test.component.css'],
+  providers: [MdUniqueSelectionDispatcher],
   directives: [
     MD_CARD_DIRECTIVES,
     MdCheckbox,
