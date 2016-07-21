@@ -13,6 +13,7 @@ import { MD_TABS_DIRECTIVES } from '@angular2-material/tabs';
 import { MD_TOOLBAR_DIRECTIVES } from '@angular2-material/toolbar';
 import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
+import { MdUniqueSelectionDispatcher } from '@angular2-material/core';
 
 
 @Component({
@@ -35,6 +36,9 @@ import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
     MD_TOOLBAR_DIRECTIVES,
     MdIcon,
     MD_BUTTON_DIRECTIVES
+  ],
+  providers: [
+    MdUniqueSelectionDispatcher
   ],
   template: `
   <div>
